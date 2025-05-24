@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Catálogo de Pasteles</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light">
@@ -12,15 +13,25 @@
 
     <!-- Filtros -->
     <div class="d-flex justify-content-center gap-2 my-3">
-      <button class="btn btn-outline-primary filter-btn" data-category="todos">Todos</button>
-      <button class="btn btn-outline-success filter-btn" data-category="niño">Niño</button>
-      <button class="btn btn-outline-warning filter-btn" data-category="niña">Niña</button>
-      <button class="btn btn-outline-dark filter-btn" data-category="adulto">Adulto</button>
+      <button class="btn btn-outline-primary filter-btn" data-category="todos">
+        <i class="fas fa-cake-candles"></i> Todos
+      </button>
+      <button class="btn btn-outline-primary filter-btn" data-category="niño">
+        <i class="fas fa-dragon"></i> Niño
+      </button>
+      <button class="btn btn-outline-primary filter-btn" data-category="niña">
+        <i class="fas fa-crown"></i> Niña
+      </button>
+      <button class="btn btn-outline-primary filter-btn" data-category="adulto">
+        <i class="fas fa-wine-glass"></i> Adulto
+      </button>
     </div>
 
     <!-- Botón PDF -->
     <div class="text-center mb-3">
-      <button class="btn btn-danger" id="btnDescargar">Descargar PDF</button>
+      <button class="btn btn-success" id="btnDescargar">
+        <i class="fas fa-download"></i> Descargar PDF
+      </button>
     </div>
 
     <!-- Catálogo -->
