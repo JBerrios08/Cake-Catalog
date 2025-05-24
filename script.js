@@ -45,7 +45,7 @@ function actualizarBotones() {
   });
 }
 
-// Descargar PDF con solo los pasteles visibles
+// Descargar PDF con título y logo
 document.getElementById("btnDescargar").addEventListener("click", () => {
   const visibles = Array.from(document.querySelectorAll(".pastel"))
     .filter(el => el.style.display !== "none");
@@ -55,14 +55,39 @@ document.getElementById("btnDescargar").addEventListener("click", () => {
     return;
   }
 
+  // Crear contenedor para PDF
   const contenedor = document.createElement("div");
-  contenedor.className = "row";
+  contenedor.className = "container mt-4";
 
-  visibles.forEach(card => contenedor.appendChild(card.cloneNode(true)));
+  // Título del PDF
+  const titulo = document.createElement("h2");
+  titulo.textContent = "Catálogo de Pasteles";
+  titulo.style.textAlign = "center";
+  titulo.style.color = "#ed7324";
+  contenedor.appendChild(titulo);
 
+  // Logo en PDF
+  const logo = document.createElement("img");
+  logo.src = "img/logo-lorena.png";
+  logo.style.display = "block";
+  logo.style.margin = "0 auto 20px auto";
+  logo.style.maxWidth = "200px";
+  contenedor.appendChild(logo);
+
+  // Agregar pasteles visibles
+  const fila = document.createElement("div");
+  fila.className = "row";
+
+  visibles.forEach(card => {
+    fila.appendChild(card.cloneNode(true));
+  });
+
+  contenedor.appendChild(fila);
+
+  // Generar PDF
   html2pdf().set({
     margin: 0.5,
-    filename: "catalogo-filtrado.pdf",
+    filename: "catalogo-pasteles.pdf",
     image: { type: "jpeg", quality: 0.98 },
     html2canvas: { scale: 2 },
     jsPDF: { unit: "in", format: "letter", orientation: "portrait" }
