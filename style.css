@@ -1,0 +1,20 @@
+.pastel {
+  transition: all 0.3s ease-in-out;
+}
+
+.pdf-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pdf-grid .card {
+  width: 200px; /* o 30% si quieres responsivo */
+  margin: 0;
+}
+
+.pdf-grid img {
+  height: 150px;
+  object-fit: cover;
+}

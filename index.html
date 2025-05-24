@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Pasteles</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+  <div class="container my-4">
+    <h1 class="text-center">Catálogo de Pasteles</h1>
+
+    <!-- Filtros -->
+    <div class="d-flex justify-content-center gap-2 my-3">
+      <button class="btn btn-outline-primary filter-btn" data-category="todos">Todos</button>
+      <button class="btn btn-outline-success filter-btn" data-category="niño">Niño</button>
+      <button class="btn btn-outline-warning filter-btn" data-category="niña">Niña</button>
+      <button class="btn btn-outline-dark filter-btn" data-category="adulto">Adulto</button>
+    </div>
+
+    <!-- Botón PDF -->
+    <div class="text-center mb-3">
+      <button class="btn btn-danger" id="btnDescargar">Descargar PDF</button>
+    </div>
+
+    <!-- Catálogo -->
+    <div class="row" id="catalogo">
+      <div class="col-md-4 pastel" data-category="niño">
+        <div class="card mb-4">
+          <img src="img/pastel1.png" class="card-img-top" alt="Pastel Niño">
+          <div class="card-body">
+            <h5 class="card-title">Pastel de Dinosaurio</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 pastel" data-category="niña">
+        <div class="card mb-4">
+          <img src="img/pastel2.png" class="card-img-top" alt="Pastel Niña">
+          <div class="card-body">
+            <h5 class="card-title">Pastel de Princesa</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 pastel" data-category="adulto">
+        <div class="card mb-4">
+          <img src="img/pastel3.png" class="card-img-top" alt="Pastel Adulto">
+          <div class="card-body">
+            <h5 class="card-title">Pastel Elegante</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="libs/html2pdf.bundle.min.js"></script>
+</body>
+</html>
