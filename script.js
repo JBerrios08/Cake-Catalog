@@ -45,7 +45,7 @@ function actualizarBotones() {
   });
 }
 
-// Descargar PDF con título y logo
+// Descargar PDF con título, logo y categorías visibles
 document.getElementById("btnDescargar").addEventListener("click", () => {
   const visibles = Array.from(document.querySelectorAll(".pastel"))
     .filter(el => el.style.display !== "none");
@@ -55,18 +55,18 @@ document.getElementById("btnDescargar").addEventListener("click", () => {
     return;
   }
 
-  // Crear contenedor para PDF
+  // Crear contenedor para el PDF
   const contenedor = document.createElement("div");
   contenedor.className = "container mt-4";
 
-  // Título del PDF
+  // Título
   const titulo = document.createElement("h2");
   titulo.textContent = "Catálogo de Pasteles";
   titulo.style.textAlign = "center";
   titulo.style.color = "#ed7324";
   contenedor.appendChild(titulo);
 
-  // Logo en PDF
+  // Logo
   const logo = document.createElement("img");
   logo.src = "img/logo-lorena.png";
   logo.style.display = "block";
@@ -74,12 +74,28 @@ document.getElementById("btnDescargar").addEventListener("click", () => {
   logo.style.maxWidth = "200px";
   contenedor.appendChild(logo);
 
-  // Agregar pasteles visibles
+  // Fila con tarjetas
   const fila = document.createElement("div");
   fila.className = "row";
 
   visibles.forEach(card => {
-    fila.appendChild(card.cloneNode(true));
+    const clon = card.cloneNode(true);
+
+    // Asegurarse que el badge se clone correctamente (por si no estaba en HTML)
+    const categoria = clon.dataset.category;
+    const existente = clon.querySelector(".badge-categoria");
+    if (!existente) {
+      const badge = document.createElement("span");
+      badge.className = "badge badge-categoria position-absolute top-0 start-0 m-2 px-2 py-1 bg-success";
+      badge.textContent = categoria.charAt(0).toUpperCase() + categoria.slice(1);
+
+      // Insertar el badge dentro de la .card
+      const tarjeta = clon.querySelector(".card");
+      tarjeta.style.position = "relative"; // asegurar posicionamiento relativo
+      tarjeta.appendChild(badge);
+    }
+
+    fila.appendChild(clon);
   });
 
   contenedor.appendChild(fila);
