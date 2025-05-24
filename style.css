@@ -22,3 +22,28 @@
 .text-color-naranja {
   color: #ed7324;
 }
+
+/* Botón anaranjado tipo outline */
+.btn-outline-naranja {
+  color: #ed7324;
+  border-color: #ed7324;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-naranja:hover {
+  background-color: #ed7324;
+  color: #fff;
+}
+
+/* Estado activo (cuando se selecciona el filtro) */
+.filter-btn.active {
+  background-color: #ed7324 !important;
+  color: #fff !important;
+  border-color: #ed7324 !important;
+}
+
+.logo-lorena {
+  max-width: 300px;  /* Ajusta el tamaño a tu preferencia */
+  height: auto;
+}

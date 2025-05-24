@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <title>Catálogo de Pasteles</title>
@@ -7,23 +8,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-light">
   <div class="container my-4">
     <h1 class="text-center text-color-naranja">Catálogo de Pasteles</h1>
+    <div class="text-center my-3">
+      <img src="img/logo-lorena.png" alt="Logo Lorena" class="logo-lorena">
+    </div>
 
-    <!-- Filtros -->
+    <!-- Filtros múltiples -->
     <div class="d-flex justify-content-center gap-2 my-3">
-      <button class="btn btn-outline-primary filter-btn" data-category="todos">
-        <i class="fas fa-cake-candles"></i> Todos
-      </button>
-      <button class="btn btn-outline-primary filter-btn" data-category="niño">
+      <button class="btn btn-outline-naranja filter-btn" data-category="niño">
         <i class="fas fa-dragon"></i> Niño
       </button>
-      <button class="btn btn-outline-primary filter-btn" data-category="niña">
+      <button class="btn btn-outline-naranja filter-btn" data-category="niña">
         <i class="fas fa-crown"></i> Niña
       </button>
-      <button class="btn btn-outline-primary filter-btn" data-category="adulto">
+      <button class="btn btn-outline-naranja filter-btn" data-category="adulto">
         <i class="fas fa-wine-glass"></i> Adulto
+      </button>
+      <button class="btn btn-outline-secondary" id="clearFilters">
+        <i class="fas fa-times"></i> Limpiar filtros
       </button>
     </div>
 
@@ -40,7 +45,7 @@
         <div class="card mb-4">
           <img src="img/pastel1.png" class="card-img-top" alt="Pastel Niño">
           <div class="card-body">
-            <h5 class="card-title text-color-naranja">Pastel de Dinosaurio</h5>
+            <h5 class="card-title text-color-naranja"><i class="fas fa-dragon"></i> Pastel de Dinosaurio</h5>
           </div>
         </div>
       </div>
@@ -48,7 +53,7 @@
         <div class="card mb-4">
           <img src="img/pastel2.png" class="card-img-top" alt="Pastel Niña">
           <div class="card-body">
-            <h5 class="card-title text-color-naranja">Pastel de Princesa</h5>
+            <h5 class="card-title text-color-naranja"><i class="fas fa-crown"></i> Pastel de Princesa</h5>
           </div>
         </div>
       </div>
@@ -56,7 +61,7 @@
         <div class="card mb-4">
           <img src="img/pastel3.png" class="card-img-top" alt="Pastel Adulto">
           <div class="card-body">
-            <h5 class="card-title text-color-naranja">Pastel Elegante</h5>
+            <h5 class="card-title text-color-naranja"><i class="fas fa-wine-glass"></i> Pastel Elegante</h5>
           </div>
         </div>
       </div>
@@ -66,4 +71,5 @@
   <script src="script.js"></script>
   <script src="libs/html2pdf.bundle.min.js"></script>
 </body>
+
 </html>

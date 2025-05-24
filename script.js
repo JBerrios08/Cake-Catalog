@@ -1,33 +1,70 @@
-// Filtro por categoría
-document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const categoria = btn.dataset.category;
-    document.querySelectorAll('.pastel').forEach(card => {
-      card.style.display = (categoria === 'todos' || card.dataset.category === categoria) ? 'block' : 'none';
-    });
+const selectedCategories = new Set();
+
+// Filtros de categoría
+document.querySelectorAll(".filter-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const category = btn.dataset.category;
+
+    if (selectedCategories.has(category)) {
+      selectedCategories.delete(category);
+    } else {
+      selectedCategories.add(category);
+    }
+
+    actualizarCatalogo();
+    actualizarBotones();
   });
 });
 
-// Descargar PDF
-document.getElementById('btnDescargar').addEventListener('click', () => {
-  const visibles = Array.from(document.querySelectorAll('.pastel'))
-    .filter(el => el.style.display !== 'none');
+// Botón "Limpiar filtros"
+document.getElementById("clearFilters").addEventListener("click", () => {
+  selectedCategories.clear();
+  actualizarCatalogo();
+  actualizarBotones();
+});
+
+// Mostrar/ocultar pasteles según filtros activos
+function actualizarCatalogo() {
+  const pasteles = document.querySelectorAll(".pastel");
+
+  if (selectedCategories.size === 0) {
+    pasteles.forEach(p => p.style.display = "block");
+  } else {
+    pasteles.forEach(p => {
+      const cat = p.dataset.category;
+      p.style.display = selectedCategories.has(cat) ? "block" : "none";
+    });
+  }
+}
+
+// Cambiar estilo activo en botones
+function actualizarBotones() {
+  document.querySelectorAll(".filter-btn").forEach(btn => {
+    const cat = btn.dataset.category;
+    btn.classList.toggle("active", selectedCategories.has(cat));
+  });
+}
+
+// Descargar PDF con solo los pasteles visibles
+document.getElementById("btnDescargar").addEventListener("click", () => {
+  const visibles = Array.from(document.querySelectorAll(".pastel"))
+    .filter(el => el.style.display !== "none");
 
   if (visibles.length === 0) {
     alert("No hay pasteles visibles para descargar.");
     return;
   }
 
-  const contenedor = document.createElement('div');
-  contenedor.classList.add('pdf-grid'); // clase personalizada
+  const contenedor = document.createElement("div");
+  contenedor.className = "row";
 
   visibles.forEach(card => contenedor.appendChild(card.cloneNode(true)));
 
   html2pdf().set({
     margin: 0.5,
-    filename: 'catalogo-filtrado.pdf',
-    image: { type: 'jpeg', quality: 0.98 },
+    filename: "catalogo-filtrado.pdf",
+    image: { type: "jpeg", quality: 0.98 },
     html2canvas: { scale: 2 },
-    jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+    jsPDF: { unit: "in", format: "letter", orientation: "portrait" }
   }).from(contenedor).save();
 });
