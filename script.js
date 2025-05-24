@@ -1,43 +1,65 @@
 const selectedCategories = new Set();
+let pastelesData = [];
 
-// Filtros de categoría
+// Cargar pasteles desde el archivo JSON
+fetch("pasteles.json")
+  .then(response => response.json())
+  .then(data => {
+    pastelesData = data;
+    renderizarPasteles();
+  })
+  .catch(error => console.error("Error al cargar el JSON:", error));
+
+function renderizarPasteles() {
+  const contenedor = document.getElementById("catalogo");
+  contenedor.innerHTML = "";
+
+  pastelesData.forEach(pastel => {
+    const visible = selectedCategories.size === 0 || selectedCategories.has(pastel.categoria);
+
+    const col = document.createElement("div");
+    col.className = "col-12 col-sm-6 col-md-4 pastel position-relative";
+    col.dataset.category = pastel.categoria;
+    col.style.display = visible ? "block" : "none";
+
+    col.innerHTML = `
+      <div class="card mb-4">
+        <span class="badge bg-success position-absolute top-0 start-0 m-2 px-2 py-1 text-capitalize">
+          ${pastel.categoria}
+        </span>
+        <img src="${pastel.imagen}" class="card-img-top img-fluid" alt="${pastel.titulo}">
+        <div class="card-body">
+          <h5 class="card-title text-color-naranja">
+            <i class="${pastel.icono}"></i> ${pastel.titulo}
+          </h5>
+        </div>
+      </div>
+    `;
+
+    contenedor.appendChild(col);
+  });
+}
+
+// Filtros
 document.querySelectorAll(".filter-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const category = btn.dataset.category;
-
-    if (selectedCategories.has(category)) {
-      selectedCategories.delete(category);
-    } else {
-      selectedCategories.add(category);
-    }
-
+    selectedCategories.has(category) ? selectedCategories.delete(category) : selectedCategories.add(category);
     actualizarCatalogo();
     actualizarBotones();
   });
 });
 
-// Botón "Limpiar filtros"
 document.getElementById("clearFilters").addEventListener("click", () => {
   selectedCategories.clear();
   actualizarCatalogo();
   actualizarBotones();
 });
 
-// Mostrar/ocultar pasteles según filtros activos
 function actualizarCatalogo() {
-  const pasteles = document.querySelectorAll(".pastel");
-
-  if (selectedCategories.size === 0) {
-    pasteles.forEach(p => p.style.display = "block");
-  } else {
-    pasteles.forEach(p => {
-      const cat = p.dataset.category;
-      p.style.display = selectedCategories.has(cat) ? "block" : "none";
-    });
-  }
+  renderizarPasteles();
 }
 
-// Cambiar estilo activo en botones
 function actualizarBotones() {
   document.querySelectorAll(".filter-btn").forEach(btn => {
     const cat = btn.dataset.category;
@@ -45,7 +67,7 @@ function actualizarBotones() {
   });
 }
 
-// Descargar PDF con título, logo y categorías visibles
+// PDF
 document.getElementById("btnDescargar").addEventListener("click", () => {
   const visibles = Array.from(document.querySelectorAll(".pastel"))
     .filter(el => el.style.display !== "none");
@@ -55,18 +77,15 @@ document.getElementById("btnDescargar").addEventListener("click", () => {
     return;
   }
 
-  // Crear contenedor para el PDF
   const contenedor = document.createElement("div");
   contenedor.className = "container mt-4";
 
-  // Título
   const titulo = document.createElement("h2");
   titulo.textContent = "Catálogo de Pasteles";
   titulo.style.textAlign = "center";
   titulo.style.color = "#ed7324";
   contenedor.appendChild(titulo);
 
-  // Logo
   const logo = document.createElement("img");
   logo.src = "img/logo-lorena.png";
   logo.style.display = "block";
@@ -74,33 +93,16 @@ document.getElementById("btnDescargar").addEventListener("click", () => {
   logo.style.maxWidth = "200px";
   contenedor.appendChild(logo);
 
-  // Fila con tarjetas
   const fila = document.createElement("div");
   fila.className = "row";
 
   visibles.forEach(card => {
     const clon = card.cloneNode(true);
-
-    // Asegurarse que el badge se clone correctamente (por si no estaba en HTML)
-    const categoria = clon.dataset.category;
-    const existente = clon.querySelector(".badge-categoria");
-    if (!existente) {
-      const badge = document.createElement("span");
-      badge.className = "badge badge-categoria position-absolute top-0 start-0 m-2 px-2 py-1 bg-success";
-      badge.textContent = categoria.charAt(0).toUpperCase() + categoria.slice(1);
-
-      // Insertar el badge dentro de la .card
-      const tarjeta = clon.querySelector(".card");
-      tarjeta.style.position = "relative"; // asegurar posicionamiento relativo
-      tarjeta.appendChild(badge);
-    }
-
     fila.appendChild(clon);
   });
 
   contenedor.appendChild(fila);
 
-  // Generar PDF
   html2pdf().set({
     margin: 0.5,
     filename: "catalogo-pasteles.pdf",

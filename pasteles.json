@@ -1,0 +1,122 @@
+[
+  {
+    "categoria": "niño",
+    "titulo": "Dinosaurio",
+    "icono": "fas fa-dragon",
+    "imagen": "img/1.png"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "Princesa",
+    "icono": "fas fa-crown",
+    "imagen": "img/2.png"
+  },
+  {
+    "categoria": "adulto",
+    "titulo": "Elegante",
+    "icono": "fas fa-wine-glass",
+    "imagen": "img/3.png"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "Superhéroe",
+    "icono": "fas fa-mask",
+    "imagen": "img/4.png"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "Unicornio",
+    "icono": "fas fa-unicorn",
+    "imagen": "img/5.png"
+  },
+  {
+    "categoria": "adulto",
+    "titulo": "Café",
+    "icono": "fas fa-mug-hot",
+    "imagen": "img/6.png"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "Carros",
+    "icono": "fas fa-car",
+    "imagen": "img/7.png"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "Sirena",
+    "icono": "fas fa-fish",
+    "imagen": "img/8.png"
+  },
+  {
+    "categoria": "adulto",
+    "titulo": "Vino y Queso",
+    "icono": "fas fa-cheese",
+    "imagen": "img/9.png"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "Pirata",
+    "icono": "fas fa-skull-crossbones",
+    "imagen": "img/10.png"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "Flores",
+    "icono": "fas fa-spa",
+    "imagen": "img/11.png"
+  },
+  {
+    "categoria": "adulto",
+    "titulo": "Gourmet",
+    "icono": "fas fa-utensils",
+    "imagen": "img/12.png"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "Robots",
+    "icono": "fas fa-robot",
+    "imagen": "img/13.png"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "Mariposas",
+    "icono": "fas fa-bug",
+    "imagen": "img/14.png"
+  },
+  {
+    "categoria": "adulto",
+    "titulo": "Minimalista",
+    "icono": "fas fa-border-style",
+    "imagen": "img/15.png"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "Espacial",
+    "icono": "fas fa-rocket",
+    "imagen": "img/16.png"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "Gatitos",
+    "icono": "fas fa-cat",
+    "imagen": "img/17.png"
+  },
+  {
+    "categoria": "adulto",
+    "titulo": "Chocolate Negro",
+    "icono": "fas fa-cookie-bite",
+    "imagen": "img/18.png"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "Lego",
+    "icono": "fas fa-cube",
+    "imagen": "img/19.png"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "Bailarina",
+    "icono": "fas fa-child",
+    "imagen": "img/20.png"
+  }
+]
