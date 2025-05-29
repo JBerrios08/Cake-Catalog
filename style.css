@@ -1,7 +1,9 @@
+/* Transición suave para mostrar/ocultar pasteles */
 .pastel {
   transition: all 0.3s ease-in-out;
 }
 
+/* Contenedor para el grid de PDF: flexbox, con separación y centrado */
 .pdf-grid {
   display: flex;
   flex-wrap: wrap;
@@ -9,21 +11,24 @@
   justify-content: center;
 }
 
+/* Estilo para cada tarjeta dentro del grid PDF */
 .pdf-grid .card {
-  width: 200px; /* o 30% si quieres responsivo */
+  width: 200px; /* Puedes usar % para responsivo si prefieres */
   margin: 0;
 }
 
+/* Imagen dentro del grid PDF: tamaño fijo y recorte para mantener proporción */
 .pdf-grid img {
   height: 150px;
   object-fit: cover;
 }
 
+/* Texto color naranja personalizado */
 .text-color-naranja {
   color: #ed7324;
 }
 
-/* Botón anaranjado tipo outline */
+/* Botón con borde y texto naranja (outline style) */
 .btn-outline-naranja {
   color: #ed7324;
   border-color: #ed7324;
@@ -31,19 +36,47 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* Hover para botón outline naranja: fondo naranja y texto blanco */
 .btn-outline-naranja:hover {
   background-color: #ed7324;
   color: #fff;
 }
 
-/* Estado activo (cuando se selecciona el filtro) */
+/* Estado activo de los botones de filtro: fondo naranja, texto y borde blanco */
 .filter-btn.active {
   background-color: #ed7324 !important;
   color: #fff !important;
   border-color: #ed7324 !important;
 }
 
+/* Logo Lorena: tamaño máximo y altura automática */
 .logo-lorena {
-  max-width: 300px;  /* Ajusta el tamaño a tu preferencia */
+  max-width: 300px;
   height: auto;
 }
+
+/* Imagen fija de 400px alto y recorte para mantener proporción */
+.img-fixed {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Altura mínima para el cuerpo de la tarjeta para mantener uniformidad */
+.card-body {
+  min-height: 80px;
+}
+
+/* Estilo general para tarjetas: bordes redondeados y sombra sutil */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Comentado: Si quieres alinear el título verticalmente */
+/*
+.card-title {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+*/

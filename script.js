@@ -1,20 +1,34 @@
-const selectedCategories = new Set();
-let pastelesData = [];
+const selectedCategories = new Set(); // Categorías seleccionadas para filtrar
+let pastelesData = []; // Datos de pasteles cargados desde JSON
+
+// Función para poner solo la primera letra en mayúscula y el resto en minúscula
+function capitalizeFirstLetter(text) {
+  if (!text) return '';
+  return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+}
+
+// Función para poner todo el texto en mayúsculas
+function uppercaseText(text) {
+  if (!text) return '';
+  return text.toUpperCase();
+}
 
 // Cargar pasteles desde el archivo JSON
 fetch("pasteles.json")
   .then(response => response.json())
   .then(data => {
-    pastelesData = data;
-    renderizarPasteles();
+    pastelesData = data;    // Guardar datos en variable global
+    renderizarPasteles();   // Mostrar catálogo inicialmente
   })
   .catch(error => console.error("Error al cargar el JSON:", error));
 
+// Función para renderizar los pasteles en el catálogo
 function renderizarPasteles() {
   const contenedor = document.getElementById("catalogo");
-  contenedor.innerHTML = "";
+  contenedor.innerHTML = ""; // Limpiar catálogo antes de re-renderizar
 
   pastelesData.forEach(pastel => {
+    // Mostrar pastel solo si su categoría está seleccionada o si no hay filtros
     const visible = selectedCategories.size === 0 || selectedCategories.has(pastel.categoria);
 
     const col = document.createElement("div");
@@ -22,12 +36,14 @@ function renderizarPasteles() {
     col.dataset.category = pastel.categoria;
     col.style.display = visible ? "block" : "none";
 
+    // Crear tarjeta del pastel con título, imagen, categoría y badge opcional
     col.innerHTML = `
-      <div class="card mb-4">
+      <div class="card mb-4 position-relative" style="cursor:pointer;">
         <span class="badge bg-success position-absolute top-0 start-0 m-2 px-2 py-1 text-capitalize">
           ${pastel.categoria}
         </span>
-        <img src="${pastel.imagen}" class="card-img-top img-fluid" alt="${pastel.titulo}">
+        ${pastel.gd ? `<span class="badge bg-success position-absolute top-0 end-0 m-2 px-2 py-1 text-uppercase">GD: ${pastel.gd}</span>` : ''}
+        <img src="${pastel.imagen}" class="card-img-top img-fluid img-fixed" alt="${pastel.titulo}">
         <div class="card-body">
           <h5 class="card-title text-color-naranja">
             <i class="${pastel.icono}"></i> ${pastel.titulo}
@@ -36,30 +52,63 @@ function renderizarPasteles() {
       </div>
     `;
 
+    // Al hacer clic en la tarjeta, mostrar modal con datos
+    col.querySelector('.card').addEventListener('click', () => {
+      mostrarModal({
+        titulo: pastel.titulo,
+        categoria: pastel.categoria,
+        gd: pastel.gd,
+        descripcion: pastel.descripcion || 'Sin descripción disponible.'
+      });
+    });
+
     contenedor.appendChild(col);
   });
 }
 
-// Filtros
+// Mostrar modal con información detallada del pastel, aplicando formato a texto
+function mostrarModal({ titulo, categoria, gd, descripcion }) {
+  const modalTitulo = document.getElementById('pastelModalLabel');
+  const modalCategoria = document.getElementById('modalCategoria');
+  const modalBadge = document.getElementById('modalBadge');
+  const modalDescripcion = document.getElementById('modalDescripcion');
+
+  modalTitulo.textContent = titulo;
+  modalCategoria.textContent = capitalizeFirstLetter(categoria); // Inicial mayúscula
+  modalBadge.textContent = gd ? `${gd}` : '-';               // Mostrar GD: número o guion
+  modalDescripcion.textContent = descripcion;
+
+  const modal = new bootstrap.Modal(document.getElementById('pastelModal'));
+  modal.show();
+}
+
+// Manejo de filtros: añadir o quitar categoría al conjunto de categorías seleccionadas
 document.querySelectorAll(".filter-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const category = btn.dataset.category;
-    selectedCategories.has(category) ? selectedCategories.delete(category) : selectedCategories.add(category);
+    if (selectedCategories.has(category)) {
+      selectedCategories.delete(category);
+    } else {
+      selectedCategories.add(category);
+    }
     actualizarCatalogo();
     actualizarBotones();
   });
 });
 
+// Botón para limpiar todos los filtros
 document.getElementById("clearFilters").addEventListener("click", () => {
   selectedCategories.clear();
   actualizarCatalogo();
   actualizarBotones();
 });
 
+// Actualiza el catálogo re-renderizando los pasteles
 function actualizarCatalogo() {
   renderizarPasteles();
 }
 
+// Actualiza la apariencia de los botones para mostrar cuáles están activos
 function actualizarBotones() {
   document.querySelectorAll(".filter-btn").forEach(btn => {
     const cat = btn.dataset.category;
@@ -67,8 +116,9 @@ function actualizarBotones() {
   });
 }
 
-// PDF
+// Generar y descargar el catálogo visible en PDF
 document.getElementById("btnDescargar").addEventListener("click", () => {
+  // Seleccionar solo los pasteles que están visibles (display != none)
   const visibles = Array.from(document.querySelectorAll(".pastel"))
     .filter(el => el.style.display !== "none");
 
@@ -77,15 +127,18 @@ document.getElementById("btnDescargar").addEventListener("click", () => {
     return;
   }
 
+  // Crear un contenedor temporal para el PDF
   const contenedor = document.createElement("div");
   contenedor.className = "container mt-4";
 
+  // Título del catálogo en el PDF
   const titulo = document.createElement("h2");
   titulo.textContent = "Catálogo de Pasteles";
   titulo.style.textAlign = "center";
   titulo.style.color = "#ed7324";
   contenedor.appendChild(titulo);
 
+  // Logo en el PDF
   const logo = document.createElement("img");
   logo.src = "img/logo-lorena.png";
   logo.style.display = "block";
@@ -93,9 +146,11 @@ document.getElementById("btnDescargar").addEventListener("click", () => {
   logo.style.maxWidth = "200px";
   contenedor.appendChild(logo);
 
+  // Contenedor fila para las tarjetas clonadas
   const fila = document.createElement("div");
   fila.className = "row";
 
+  // Clonar cada pastel visible y agregarlo al contenedor para el PDF
   visibles.forEach(card => {
     const clon = card.cloneNode(true);
     fila.appendChild(clon);
@@ -103,11 +158,12 @@ document.getElementById("btnDescargar").addEventListener("click", () => {
 
   contenedor.appendChild(fila);
 
+  // Configurar y generar PDF con html2pdf
   html2pdf().set({
     margin: 0.5,
     filename: "catalogo-pasteles.pdf",
     image: { type: "jpeg", quality: 0.98 },
     html2canvas: { scale: 2 },
-    jsPDF: { unit: "in", format: "letter", orientation: "portrait" }
+    jsPDF: { unit: "in", format: "tabloid", orientation: "landscape" }
   }).from(contenedor).save();
 });
