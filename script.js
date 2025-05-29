@@ -45,7 +45,7 @@ function renderizarPasteles() {
         </span>
         ${
           pastel.gd
-            ? `<span class="badge bg-success position-absolute top-0 end-0 m-2 px-2 py-1 text-uppercase">GD: ${pastel.gd}</span>`
+            ? `<span class="badge bg-success position-absolute top-0 end-0 m-2 px-2 py-1 text-uppercase">GD${pastel.gd}</span>`
             : ""
         }
         <img src="${
