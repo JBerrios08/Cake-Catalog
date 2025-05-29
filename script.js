@@ -39,7 +39,7 @@ function renderizarPasteles() {
 
     // Crear tarjeta del pastel con título, imagen, categoría y badge opcional
     col.innerHTML = `
-      <div class="card mb-4 position-relative" style="cursor:pointer;">
+      <div class="card my-4 position-relative" style="cursor:pointer;">
         <span class="badge bg-success position-absolute top-0 start-0 m-2 px-2 py-1 text-capitalize">
           ${pastel.categoria}
         </span>
@@ -182,7 +182,7 @@ document.getElementById("btnDescargar").addEventListener("click", () => {
       filename: "catalogo-pasteles.pdf",
       image: { type: "jpeg", quality: 0.98 },
       html2canvas: { scale: 2 },
-      jsPDF: { unit: "cm", format: [30, 26], orientation: "landscape" },
+      jsPDF: { unit: "cm", format: [40, 15], orientation: "landscape" },
     })
     .from(contenedor)
     .save();

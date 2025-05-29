@@ -2,7 +2,7 @@
   {
     "categoria": "adulto",
     "titulo": "Rosas y Liston",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-spa",
     "imagen": "img/1.jpg",
     "gd": "0",
     "descripcion": ""
@@ -10,7 +10,7 @@
   {
     "categoria": "adulto",
     "titulo": "Caramelo -P",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-candy-cane",
     "imagen": "img/2.jpg",
     "gd": "2",
     "descripcion": ""
@@ -18,7 +18,7 @@
   {
     "categoria": "adulto",
     "titulo": "Fresas -P",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-apple-alt",
     "imagen": "img/3.jpg",
     "gd": "4",
     "descripcion": ""
@@ -26,7 +26,7 @@
   {
     "categoria": "adulto",
     "titulo": "Cereza Oreo (0)",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-cookie",
     "imagen": "img/4.png",
     "gd": "1",
     "descripcion": ""
@@ -34,7 +34,7 @@
   {
     "categoria": "adulto",
     "titulo": "Espumillas de Rosas (0)",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-seedling",
     "imagen": "img/5.png",
     "gd": "1",
     "descripcion": ""
@@ -42,7 +42,7 @@
   {
     "categoria": "adulto",
     "titulo": "Flores y Numeros (0)",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-calculator",
     "imagen": "img/6.png",
     "gd": "0",
     "descripcion": ""
@@ -50,21 +50,21 @@
   {
     "categoria": "adulto",
     "titulo": "Rosetas y Mariposas (0)",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-bug",
     "imagen": "img/7.png",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "Smoking (0)",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-user-tie",
     "imagen": "img/8.png",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "CHOCO-OREO",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-ice-cream",
     "imagen": "img/9.png",
     "gd": "1",
     "descripcion": ""
@@ -72,7 +72,7 @@
   {
     "categoria": "adulto",
     "titulo": "CREMOSO",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-star",
     "imagen": "img/10.jpg",
     "gd": "2",
     "descripcion": ""
@@ -80,7 +80,7 @@
   {
     "categoria": "adulto",
     "titulo": "FRESAOREO",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-ice-cream",
     "imagen": "img/11.jpg",
     "gd": "1",
     "descripcion": ""
@@ -88,7 +88,7 @@
   {
     "categoria": "adulto",
     "titulo": "Duque",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-chess-king",
     "imagen": "img/12.png",
     "gd": "1",
     "descripcion": ""
@@ -96,7 +96,7 @@
   {
     "categoria": "adulto",
     "titulo": "Imperial",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-crown",
     "imagen": "img/13.png",
     "gd": "1",
     "descripcion": ""
@@ -104,179 +104,179 @@
   {
     "categoria": "adulto",
     "titulo": "FRESA ROSA",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-seedling",
     "imagen": "img/14.png",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "Vergel",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-tree",
     "imagen": "img/15.png",
-    "gd":"2",
+    "gd": "2",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "ROSALEDA",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-spa",
     "imagen": "img/16.png",
     "descripcion": ""
-  },  
+  },
   {
     "categoria": "adulto",
     "titulo": "DULCE TRILOGIA",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-cubes",
     "imagen": "img/17.png",
-    "gd":"2",
+    "gd": "2",
     "descripcion": ""
-  },  
+  },
   {
     "categoria": "adulto",
     "titulo": "GIRASOLES 3",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-sun",
     "imagen": "img/18.png",
-    "gd":"2",
+    "gd": "2",
     "descripcion": ""
-  },  
+  },
   {
     "categoria": "adulto",
     "titulo": "FLORESTA",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-leaf",
     "imagen": "img/19.png",
     "descripcion": ""
-  },  
+  },
   {
     "categoria": "adulto",
     "titulo": "EMBAJADOR",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-user-tie",
     "imagen": "img/20.png",
-    "gd":"2",
+    "gd": "2",
     "descripcion": ""
-  },  
+  },
   {
     "categoria": "adulto",
     "titulo": "ELITE",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-gem",
     "imagen": "img/21.png",
-    "gd":"1",
+    "gd": "1",
     "descripcion": ""
-  },  
+  },
   {
     "categoria": "adulto",
     "titulo": "DIPLOMATICO",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-handshake",
     "imagen": "img/22.png",
-    "gd":"1",
+    "gd": "1",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "DINASTIA",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-chess-rook",
     "imagen": "img/23.png",
-    "gd":"2",
+    "gd": "2",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "CORAZON",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-heart",
     "imagen": "img/24.png",
-    "gd":"2",
+    "gd": "2",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "CIELITO LINDO1",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-cloud-sun",
     "imagen": "img/25.png",
-    "gd":"0",
+    "gd": "0",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "ALAMEDA",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-tree",
     "imagen": "img/26.png",
-    "gd":"1",
+    "gd": "1",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "Rosa",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-spa",
     "imagen": "img/27.png",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "GIRASOLES 1",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-sun",
     "imagen": "img/28.png",
-    "gd":"5",
+    "gd": "5",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "JARDIN DE AMOR",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-seedling",
     "imagen": "img/29.jpg",
-    "gd":"2",
+    "gd": "2",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "GIRASOLES 2",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-sun",
     "imagen": "img/30.jpg",
-    "gd":"4",
+    "gd": "4",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "FLORES 01",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-seedling",
     "imagen": "img/31.jpg",
-    "gd":"5",
+    "gd": "5",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "FLORES 02",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-leaf",
     "imagen": "img/32.jpg",
-    "gd":"5",
+    "gd": "5",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "FLORES 07",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-palette",
     "imagen": "img/33.jpg",
-    "gd":"5",
+    "gd": "5",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "FLORES 06",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-feather-alt",
     "imagen": "img/34.jpg",
-    "gd":"4",
+    "gd": "4",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "FLORES 08",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-star",
     "imagen": "img/35.jpg",
-    "gd":"3",
+    "gd": "3",
     "descripcion": ""
   },
   {
     "categoria": "adulto",
     "titulo": "FLORES 05",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-tree",
     "imagen": "img/36.jpg",
     "gd": "5",
     "descripcion": ""
@@ -284,7 +284,7 @@
   {
     "categoria": "adulto",
     "titulo": "FLORES 04",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-gem",
     "imagen": "img/37.jpg",
     "gd": "4",
     "descripcion": ""
@@ -292,7 +292,7 @@
   {
     "categoria": "adulto",
     "titulo": "FLORES 03",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-holly-berry",
     "imagen": "img/38.png",
     "gd": "3",
     "descripcion": ""
@@ -300,7 +300,7 @@
   {
     "categoria": "adulto",
     "titulo": "FLORES 09",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-sun",
     "imagen": "img/39.png",
     "gd": "3",
     "descripcion": ""
@@ -308,7 +308,7 @@
   {
     "categoria": "adulto",
     "titulo": "FLORES 10",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-heart",
     "imagen": "img/40.png",
     "gd": "4",
     "descripcion": "Rosas de crema"
@@ -316,7 +316,7 @@
   {
     "categoria": "adulto",
     "titulo": "ROSETAS 01",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-ribbon",
     "imagen": "img/41.png",
     "gd": "1",
     "descripcion": ""
@@ -324,7 +324,7 @@
   {
     "categoria": "adulto",
     "titulo": "ROSETAS 02",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-gem",
     "imagen": "img/42.png",
     "gd": "4",
     "descripcion": "Perlas de las disponible, plaquita lateral en topper"
@@ -332,7 +332,7 @@
   {
     "categoria": "adulto",
     "titulo": "FLORES 12",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-leaf",
     "imagen": "img/43.jpg",
     "gd": "3",
     "descripcion": ""
@@ -340,7 +340,7 @@
   {
     "categoria": "adulto",
     "titulo": "Flores 13",
-    "icono": "fas fa-birthday-cake",
+    "icono": "fas fa-spa",
     "imagen": "img/44.png",
     "gd": "4",
     "descripcion": "Flores de crema"
