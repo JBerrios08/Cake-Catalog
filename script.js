@@ -1,5 +1,16 @@
 const selectedCategories = new Set(); // Categorías seleccionadas para filtrar
+selectedCategories.add("adulto"); // Mostrar solo la categoría "adulto" al iniciar
+
 let pastelesData = []; // Datos de pasteles cargados desde JSON
+
+fetch("pasteles.json")
+  .then((response) => response.json())
+  .then((data) => {
+    pastelesData = data;
+    renderizarPasteles();
+    actualizarBotones();
+  })
+  .catch((error) => console.error("Error al cargar el JSON:", error));
 
 // Función para poner solo la primera letra en mayúscula y el resto en minúscula
 function capitalizeFirstLetter(text) {

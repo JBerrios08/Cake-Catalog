@@ -344,5 +344,445 @@
     "imagen": "img/44.png",
     "gd": "4",
     "descripcion": "Flores de crema"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "SPIDER MAN NIÑO",
+    "icono": "fas fa-mask", 
+    "imagen": "img/45.png",
+    "gd": "2",
+    "descripcion": ""
+  },
+  {
+    "categoria": "niño",
+    "titulo": "PAW PATROL 5",
+    "icono": "fas fa-dog",
+    "imagen": "img/46.png",
+    "gd": "3",
+    "descripcion": ""
+  },
+  {
+    "categoria": "niño",
+    "titulo": "PAW PATROL 01",
+    "icono": "fas fa-dog",
+    "imagen": "img/47.png",
+    "gd": "3",
+    "descripcion": "Imagen digital en plaquita, no cubrirá todo el fondo."
+  },
+  {
+    "categoria": "niño",
+    "titulo": "PAW PATROL 02",
+    "icono": "fas fa-paw",
+    "imagen": "img/48.jpg",
+    "gd": "3",
+    "descripcion": "Imagen en plaquita no cubrirá todo el fondo."
+  },
+  {
+    "categoria": "niño",
+    "titulo": "VACA LOLA 01",
+    "icono": "fas fa-cow",
+    "imagen": "img/49.png",
+    "gd": "3",
+    "descripcion": "Figura en topper. manchas de dulce."
+  },
+  {
+    "categoria": "niño",
+    "titulo": "BLAZE 01",
+    "icono": "fas fa-truck-monster",
+    "imagen": "img/50.png",
+    "gd": "4",
+    "descripcion": "Figura en topper, lateral digital."
+  },
+  {
+    "categoria": "niño",
+    "titulo": "CAP 01",
+    "icono": "fas fa-shield-alt",
+    "imagen": "img/51.jpg",
+    "gd": "2",
+    "descripcion": "Imagen digital en plaquita."
+  },
+  {
+    "categoria": "niño",
+    "titulo": "MICKEY 01",
+    "icono": "fas fa-mouse",
+    "imagen": "img/52.jpg",
+    "gd": "2",
+    "descripcion": "Imagen digital en plaquita. no cubrirá todo el fondo."
+  },
+  {
+    "categoria": "niño",
+    "titulo": "TOY 01",
+    "icono": "fas fa-robot",
+    "imagen": "img/53.png",
+    "gd": "4",
+    "descripcion": "Imagen digital, manchas de dulce."
+  },
+  {
+    "categoria": "niño",
+    "titulo": "SONIC 01",
+    "icono": "fas fa-bolt",
+    "imagen": "img/54.png",
+    "gd": "4",
+    "descripcion": "Figuras digitales."
+  },
+  {
+    "categoria": "niño",
+    "titulo": "MICKEY 02",
+    "icono": "fas fa-mouse",
+    "imagen": "img/55.jpg",
+    "gd": "4",
+    "descripcion": "Figura digital."
+  },
+  {
+    "categoria": "niño",
+    "titulo": "BOB 01",
+    "icono": "fas fa-mouse",
+    "imagen": "img/56.png",
+    "gd": "2",
+    "descripcion": "Figuras en topper."
+  },
+  {
+    "categoria": "niño",
+    "titulo": "MARIO 01",
+    "icono": "fas fa-gamepad",
+    "imagen": "img/57.jpg",
+    "gd": "2",
+    "descripcion": "Lateral digital."
+  },
+  {
+    "categoria": "niño",
+    "titulo": "MICKEY 03",
+    "icono": "fas fa-mouse",
+    "imagen": "img/58.png",
+    "gd": "3",
+    "descripcion": "Imagen en plaquita."
+  },
+  {
+    "categoria": "niño",
+    "titulo": "BARCA 01",
+    "icono": "fas fa-futbol",
+    "imagen": "img/59.jpg",
+    "gd": "2",
+    "descripcion": "Imagen en plaquita."
+  },
+  {
+    "categoria": "niño",
+    "titulo": "PAW PATROL 03",
+    "icono": "fas fa-dog",
+    "imagen": "img/60.png",
+    "gd": "3",
+    "descripcion": "Imagen en plaquita."
+  },
+  {
+    "categoria": "niño",
+    "titulo": "DINOSAURIOS",
+    "icono": "fas fa-dragon",
+    "imagen": "img/61.png",
+    "gd": "5",
+    "descripcion": "Con figuras"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "DINOSAURIOS 02",
+    "icono": "fas fa-bone",
+    "imagen": "img/62.png",
+    "gd": "5",
+    "descripcion": "Con figuras"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "DINOSAURIOS 03",
+    "icono": "fas fa-paw",
+    "imagen": "img/63.png",
+    "gd": "4",
+    "descripcion": "Imagen digital"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "SUPER MARIO",
+    "icono": "fas fa-gamepad",
+    "imagen": "img/64.png",
+    "gd": "3",
+    "descripcion": "Imagen en plaquita"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "SPIDERMAN 01",
+    "icono": "fas fa-spider",
+    "imagen": "img/65.png",
+    "gd": "4",
+    "descripcion": "Imagen en plaquita"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "SPIDERMAN 02",
+    "icono": "fas fa-spider",
+    "imagen": "img/66.png",
+    "gd": "4",
+    "descripcion": "Imagen en plaquita"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "AVENGERS 01",
+    "icono": "fas fa-shield-alt",
+    "imagen": "img/67.png",
+    "gd": "3",
+    "descripcion": "Imagen digital en plaquita"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "DRAGON BALL 01",
+    "icono": "fas fa-bolt",
+    "imagen": "img/68.png",
+    "gd": "3",
+    "descripcion": "Imagen digital en plaquita"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "MINECRAFT",
+    "icono": "fas fa-cube",
+    "imagen": "img/69.png",
+    "gd": "4",
+    "descripcion": "Imagen en plaquita"
+  },
+  {
+    "categoria": "niño",
+    "titulo": "CARRITOS",
+    "icono": "fas fa-car",
+    "imagen": "img/70.png",
+    "gd": "2",
+    "descripcion": "Imagen en plaquita"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "Frozen Anna y Elsa",
+    "icono": "fas fa-snowflake",
+    "imagen": "img/71.png",
+    "gd": "3",
+    "descripcion": ""
+  },
+  {
+    "categoria": "niña",
+    "titulo": "Masha y el Oso 01.",
+    "icono": "fas fa-bear",
+    "imagen": "img/72.png",
+    "gd": "3",
+    "descripcion": "Imagen en plaquita"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "MASHA Y EL OSO",
+    "icono": "fas fa-bear",
+    "imagen": "img/74.png",
+    "gd": "5",
+    "descripcion": "."
+  },
+  {
+    "categoria": "niña",
+    "titulo": "PAW PATROL NIÑA",
+    "icono": "fas fa-dog",
+    "imagen": "img/75.png",
+    "gd": "2",
+    "descripcion": "."
+  },
+  {
+    "categoria": "niña",
+    "titulo": "LAS PRINCESAS",
+    "icono": "fas fa-crown",
+    "imagen": "img/76.png",
+    "gd": "4",
+    "descripcion": "."
+  },
+  {
+    "categoria": "niña",
+    "titulo": "UNICORNIO",
+    "icono": "fas fa-magic",
+    "imagen": "img/77.png",
+    "gd": "3",
+    "descripcion": "."
+  },
+  {
+    "categoria": "niña",
+    "titulo": "MINNIE 01",
+    "icono": "fas fa-mouse-pointer",
+    "imagen": "img/78.png",
+    "gd": "4",
+    "descripcion": "imagen en plaquita no cubrirá todo el fondo"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "SIRENITA 01",
+    "icono": "fas fa-water",
+    "imagen": "img/79.png",
+    "gd": "3",
+    "descripcion": "Imagen digital en plaquita"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "COLOR 01",
+    "icono": "fas fa-palette",
+    "imagen": "img/80.png",
+    "gd": "2",
+    "descripcion": "Rosas en crema."
+  },
+  {
+    "categoria": "niña",
+    "titulo": "FLORES 01",
+    "icono": "fas fa-spa",
+    "imagen": "img/81.png",
+    "gd": "5",
+    "descripcion": "Rosas en crema"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "LILO Y STITCH 01",
+    "icono": "fas fa-hamburger",
+    "imagen": "img/82.jpg",
+    "gd": "5",
+    "descripcion": "Flores de azucar. imagen digital"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "ELSA 01",
+    "icono": "fas fa-snowflake",
+    "imagen": "img/83.png",
+    "gd": "4",
+    "descripcion": "Carita Digital"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "VACA LOLA 01",
+    "icono": "fas fa-cow",
+    "imagen": "img/84.jpg",
+    "gd": "4",
+    "descripcion": "Imagen en Gelly"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "MASHA 01",
+    "icono": "fas fa-bear",
+    "imagen": "img/85.png",
+    "gd": "4",
+    "descripcion": "Imagen digital"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "SOFIA 01",
+    "icono": "fas fa-crown",
+    "imagen": "img/86.png",
+    "gd": "4",
+    "descripcion": "Imagen en plaquita"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "SOFIA 03",
+    "icono": "fas fa-crown",
+    "imagen": "img/87.png",
+    "gd": "3",
+    "descripcion": "Imagen en plaquita"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "FROZEN 01",
+    "icono": "fas fa-snowflake",
+    "imagen": "img/88.png",
+    "gd": "3",
+    "descripcion": "IMAGEN EN PLAQUITA."
+  },
+  {
+    "categoria": "niña",
+    "titulo": "UNICORNIO 01",
+    "icono": "fas fa-magic",
+    "imagen": "img/89.png",
+    "gd": "4",
+    "descripcion": "FIGURAS EN TOPPER"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "STITCH 01",
+    "icono": "fas fa-star",
+    "imagen": "img/90.png",
+    "gd": "4",
+    "descripcion": "FIGURA EN TOPPER, NO LLEVARIA LISTON EN EL DISCO"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "SIRENITA 02",
+    "icono": "fas fa-water",
+    "imagen": "img/91.png",
+    "gd": "4",
+    "descripcion": "IMAGEN EN PLAQUITA, FIGURAS DE DULCE"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "SIRENITA 03",
+    "icono": "fas fa-water",
+    "imagen": "img/92.jpg",
+    "gd": "4",
+    "descripcion": "IMAGEN EN PLAQUITA, FIGURAS DE DULCE"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "ROSITA 01",
+    "icono": "fas fa-spa",
+    "imagen": "img/93.png",
+    "gd": "4",
+    "descripcion": "Imagen en plaquita de dulce."
+  },
+  {
+    "categoria": "niña",
+    "titulo": "GATITA A 01",
+    "icono": "fas fa-cat",
+    "imagen": "img/94.png",
+    "gd": "3",
+    "descripcion": "Figuras de molde disponible."
+  },
+  {
+    "categoria": "niña",
+    "titulo": "SKYE 01",
+    "icono": "fas fa-dog",
+    "imagen": "img/95.jpg",
+    "gd": "2",
+    "descripcion": "Imagen no cubrira todo el fondo."
+  },
+  {
+    "categoria": "niña",
+    "titulo": "SOFIA 04",
+    "icono": "fas fa-crown",
+    "imagen": "img/96.png",
+    "gd": "4",
+    "descripcion": "La imagen no cubrira todo el fondo."
+  },
+  {
+    "categoria": "niña",
+    "titulo": "BTS 01",
+    "icono": "fas fa-music",
+    "imagen": "img/97.png",
+    "gd": "3",
+    "descripcion": "Figuras en topper, debe ser torta alta."
+  },
+  {
+    "categoria": "niña",
+    "titulo": "BTS 03",
+    "icono": "fas fa-music",
+    "imagen": "img/98.png",
+    "gd": "3",
+    "descripcion": "Figuras en topper"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "BTS 04",
+    "icono": "fas fa-music",
+    "imagen": "img/99.png",
+    "gd": "4",
+    "descripcion": "Figuras en topper"
+  },
+  {
+    "categoria": "niña",
+    "titulo": "BTS 07",
+    "icono": "fas fa-music",
+    "imagen": "img/100.png",
+    "gd": "2",
+    "descripcion": "Imagen en plaquita"
   }
 ]
