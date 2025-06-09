@@ -468,7 +468,7 @@
   {
     "categoria": "niño",
     "titulo": "PAW PATROL 03",
-    "icono": "fas fa-child",
+    "icono": "fas fa-dog",
     "imagen": "img/60.png",
     "gd": "3",
     "descripcion": "Imagen en plaquita."
@@ -476,7 +476,7 @@
   {
     "categoria": "niño",
     "titulo": "CARS 01.",
-    "icono": "fas fa-child",
+    "icono": "fas fa-car",
     "imagen": "img/61.png",
     "gd": "4",
     "descripcion": "FIGURAS EN TOPPER."
@@ -484,7 +484,7 @@
   {
     "categoria": "niño",
     "titulo": "CARS 01",
-    "icono": "fas fa-child",
+    "icono": "fas fa-car",
     "imagen": "img/61.png",
     "gd": "5",
     "descripcion": "FIGURAS EN PLACA DE DULCE."
@@ -492,7 +492,7 @@
   {
     "categoria": "niño",
     "titulo": "CAP 02",
-    "icono": "fas fa-child",
+    "icono": "fas fa-shield-alt",
     "imagen": "img/62.png",
     "gd": "4",
     "descripcion": "FIGURAS EN TOPPER."
@@ -500,7 +500,7 @@
   {
     "categoria": "niño",
     "titulo": "CAP P 02.",
-    "icono": "fas fa-child",
+    "icono": "fas fa-shield-alt",
     "imagen": "img/62.png",
     "gd": "5",
     "descripcion": "FIGURAS EN PLACA DE DULCE."
@@ -508,7 +508,7 @@
   {
     "categoria": "niño",
     "titulo": "PAW PATROL 04",
-    "icono": "fas fa-child",
+    "icono": "fas fa-dog",
     "imagen": "img/63.png",
     "gd": "4",
     "descripcion": "Figuras serán toppers, debe ser torta alta."
@@ -516,7 +516,7 @@
   {
     "categoria": "niño",
     "titulo": "SPIDERMAN 02",
-    "icono": "fas fa-child",
+    "icono": "fas fa-spider",
     "imagen": "img/64.png",
     "gd": "2",
     "descripcion": "Figura en plaquita."
@@ -524,7 +524,7 @@
   {
     "categoria": "niño",
     "titulo": "SPIDERMAN 03",
-    "icono": "fas fa-child",
+    "icono": "fas fa-spider",
     "imagen": "img/65.png",
     "gd": "4",
     "descripcion": "Figuras topper."
@@ -532,7 +532,7 @@
   {
     "categoria": "niño",
     "titulo": "SPIDERMAN 04",
-    "icono": "fas fa-child",
+    "icono": "fas fa-spider",
     "imagen": "img/66.png",
     "gd": "2",
     "descripcion": "Figuras topper."
@@ -540,7 +540,7 @@
   {
     "categoria": "niño",
     "titulo": "PAW PATROL 05",
-    "icono": "fas fa-child",
+    "icono": "fas fa-dog",
     "imagen": "img/67.png",
     "gd": "4",
     "descripcion": "Figuras en topper."
@@ -548,7 +548,7 @@
   {
     "categoria": "niño",
     "titulo": "GRANJA 01",
-    "icono": "fas fa-child",
+    "icono": "fas fa-tractor",
     "imagen": "img/68.png",
     "gd": "4",
     "descripcion": "Figuras digitales en plaquita de dulce."
@@ -556,7 +556,7 @@
   {
     "categoria": "niño",
     "titulo": "SPIDERMAN 05",
-    "icono": "fas fa-child",
+    "icono": "fas fa-spider",
     "imagen": "img/69.png",
     "gd": "2",
     "descripcion": "Araña en topper."
@@ -564,7 +564,7 @@
   {
     "categoria": "niño",
     "titulo": "PLIM PLIM 01",
-    "icono": "fas fa-child",
+    "icono": "fas fa-magic",
     "imagen": "img/70.png",
     "gd": "4",
     "descripcion": "Figuras en topper."
@@ -572,7 +572,7 @@
   {
     "categoria": "niña",
     "titulo": "Frozen Anna y Elsa",
-    "icono": "fas fa-star",
+    "icono": "fas fa-snowflake",
     "imagen": "img/71.png",
     "gd": "3",
     "descripcion": ""
@@ -580,7 +580,7 @@
   {
     "categoria": "niña",
     "titulo": "Masha y el Oso 01.",
-    "icono": "fas fa-star",
+    "icono": "fas fa-bear",
     "imagen": "img/72.png",
     "gd": "3",
     "descripcion": "Imagen en plaquita"
@@ -588,7 +588,7 @@
   {
     "categoria": "niña",
     "titulo": "MASHA Y EL OSO",
-    "icono": "fas fa-star",
+    "icono": "fas fa-bear",
     "imagen": "img/74.png",
     "gd": "5",
     "descripcion": "."
@@ -596,7 +596,7 @@
   {
     "categoria": "niña",
     "titulo": "PAW PATROL NIÑA",
-    "icono": "fas fa-star",
+    "icono": "fas fa-dog",
     "imagen": "img/75.png",
     "gd": "2",
     "descripcion": "."
@@ -604,7 +604,7 @@
   {
     "categoria": "niña",
     "titulo": "LAS PRINCESAS",
-    "icono": "fas fa-star",
+    "icono": "fas fa-crown",
     "imagen": "img/76.png",
     "gd": "4",
     "descripcion": "."
@@ -612,7 +612,7 @@
   {
     "categoria": "niña",
     "titulo": "UNICORNIO",
-    "icono": "fas fa-star",
+    "icono": "fas fa-horse",
     "imagen": "img/77.png",
     "gd": "3",
     "descripcion": "."
@@ -620,7 +620,7 @@
   {
     "categoria": "niña",
     "titulo": "MINNIE 01",
-    "icono": "fas fa-star",
+    "icono": "fas fa-bow",
     "imagen": "img/78.png",
     "gd": "4",
     "descripcion": "imagen en plaquita no cubrirá todo el fondo"
@@ -628,7 +628,7 @@
   {
     "categoria": "niña",
     "titulo": "SIRENITA 01",
-    "icono": "fas fa-star",
+    "icono": "fas fa-water",
     "imagen": "img/79.png",
     "gd": "3",
     "descripcion": "Imagen digital en plaquita"
@@ -636,7 +636,7 @@
   {
     "categoria": "niña",
     "titulo": "COLOR 01",
-    "icono": "fas fa-star",
+    "icono": "fas fa-palette",
     "imagen": "img/80.png",
     "gd": "2",
     "descripcion": "Rosas en crema."
@@ -644,7 +644,7 @@
   {
     "categoria": "niña",
     "titulo": "FLORES 01",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-flower",
     "imagen": "img/81.png",
     "gd": "5",
     "descripcion": "Rosas en crema"
@@ -652,7 +652,7 @@
   {
     "categoria": "niña",
     "titulo": "LILO Y STITCH 01",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-magic",
     "imagen": "img/82.jpg",
     "gd": "5",
     "descripcion": "Flores de azucar. imagen digital"
@@ -660,7 +660,7 @@
   {
     "categoria": "niña",
     "titulo": "ELSA 01",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-snowflake",
     "imagen": "img/83.png",
     "gd": "4",
     "descripcion": "Carita Digital"
@@ -668,7 +668,7 @@
   {
     "categoria": "niña",
     "titulo": "VACA LOLA 01",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-cow",
     "imagen": "img/84.jpg",
     "gd": "4",
     "descripcion": "Imagen en Gelly"
@@ -676,7 +676,7 @@
   {
     "categoria": "niña",
     "titulo": "MASHA 01",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-child",
     "imagen": "img/85.png",
     "gd": "4",
     "descripcion": "Imagen digital"
@@ -684,7 +684,7 @@
   {
     "categoria": "niña",
     "titulo": "SOFIA 01",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-crown",
     "imagen": "img/86.png",
     "gd": "4",
     "descripcion": "Imagen en plaquita"
@@ -692,7 +692,7 @@
   {
     "categoria": "niña",
     "titulo": "SOFIA 03",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-crown",
     "imagen": "img/87.png",
     "gd": "3",
     "descripcion": "Imagen en plaquita"
@@ -700,7 +700,7 @@
   {
     "categoria": "niña",
     "titulo": "FROZEN 01",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-snowflake",
     "imagen": "img/88.png",
     "gd": "3",
     "descripcion": "IMAGEN EN PLAQUITA."
@@ -708,7 +708,7 @@
   {
     "categoria": "niña",
     "titulo": "UNICORNIO 01",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-unicorn",
     "imagen": "img/89.png",
     "gd": "4",
     "descripcion": "FIGURAS EN TOPPER"
@@ -716,7 +716,7 @@
   {
     "categoria": "niña",
     "titulo": "STITCH 01",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-star",
     "imagen": "img/90.png",
     "gd": "4",
     "descripcion": "FIGURA EN TOPPER, NO LLEVARIA LISTON EN EL DISCO"
@@ -724,7 +724,7 @@
   {
     "categoria": "niña",
     "titulo": "SIRENITA 02",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-water",
     "imagen": "img/91.png",
     "gd": "4",
     "descripcion": "IMAGEN EN PLAQUITA, FIGURAS DE DULCE"
@@ -732,7 +732,7 @@
   {
     "categoria": "niña",
     "titulo": "SIRENITA 03",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-water",
     "imagen": "img/92.jpg",
     "gd": "4",
     "descripcion": "IMAGEN EN PLAQUITA, FIGURAS DE DULCE"
@@ -740,7 +740,7 @@
   {
     "categoria": "niña",
     "titulo": "ROSITA 01",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-flower",
     "imagen": "img/93.png",
     "gd": "4",
     "descripcion": "Imagen en plaquita de dulce."
@@ -748,7 +748,7 @@
   {
     "categoria": "niña",
     "titulo": "GATITA A 01",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-cat",
     "imagen": "img/94.png",
     "gd": "3",
     "descripcion": "Figuras de molde disponible."
@@ -756,7 +756,7 @@
   {
     "categoria": "niña",
     "titulo": "SKYE 01",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-dog",
     "imagen": "img/95.jpg",
     "gd": "2",
     "descripcion": "Imagen no cubrira todo el fondo."
@@ -764,7 +764,7 @@
   {
     "categoria": "niña",
     "titulo": "SOFIA 04",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-crown",
     "imagen": "img/96.png",
     "gd": "4",
     "descripcion": "La imagen no cubrira todo el fondo."
@@ -772,7 +772,7 @@
   {
     "categoria": "niña",
     "titulo": "BTS 01",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-music",
     "imagen": "img/97.png",
     "gd": "3",
     "descripcion": "Figuras en topper, debe ser torta alta."
@@ -780,7 +780,7 @@
   {
     "categoria": "niña",
     "titulo": "BTS 03",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-music",
     "imagen": "img/98.png",
     "gd": "3",
     "descripcion": "Figuras en topper"
@@ -788,7 +788,7 @@
   {
     "categoria": "niña",
     "titulo": "BTS 04",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-music",
     "imagen": "img/99.png",
     "gd": "4",
     "descripcion": "Figuras en topper"
@@ -796,7 +796,7 @@
   {
     "categoria": "niña",
     "titulo": "BTS 07",
-    "icono": "fas fa-futbol",
+    "icono": "fas fa-music",
     "imagen": "img/100.png",
     "gd": "2",
     "descripcion": "Imagen en plaquita"
